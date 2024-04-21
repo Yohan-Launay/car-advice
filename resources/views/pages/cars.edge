@@ -1,1 +1,14 @@
+@include('partials/header')
+
+@each(car in cars)
+    <li> {{ car.name }} </li>
+    license: {{ car.brand }} <br>
+    img: <img src="{{ car.image }}" alt="{{ car.name }}"> <br>
+    <li>{{ car.price }}</li>
+    <a href="/cars/{{ car.id }}">More info</a>
+
+
+@end
+
+@include('partials/footer')
 

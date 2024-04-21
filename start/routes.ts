@@ -10,7 +10,7 @@
 import router from '@adonisjs/core/services/router'
 const CarsController = () => import('#controllers/cars_controller')
 
-// router.on('/').render('pages/home')
+router.on('/').render('pages/home')
 
 // router.on('/').render('pages/home')
-router.get('/', [CarsController, 'index'])
+router.get('/cars', [CarsController, 'index'])

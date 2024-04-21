@@ -7,7 +7,7 @@ export default class CarsController {
    * @param view
    */
   async index({ view }: HttpContext) {
-    return view.render('pages/home', { cars: await Car.all() })
+    return view.render('pages/cars', { cars: await Car.all() })
   }
 
   /**
